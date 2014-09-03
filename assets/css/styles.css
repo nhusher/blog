@@ -1,54 +1,33 @@
-html {
-    background-color: #FFF8F2;
-    color: #593324;
-}
-
-body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.9rem;
-    line-height: 1.75;
-}
-
-a:link    { color: #384A87; }
-a:visited { color: #59314E; }
-
 sup a { text-decoration: none; }
 
-h1,h2,h3 {
-    font-family: "Abril Fatface", cursive;
-    font-weight: normal;
-}
-
-h2 {
-    font-size: 4rem;
-    line-height: 0.6;
-    text-indent: -0.3rem;
-}
-
-h1 :link, h2 :link, h3 :link {
-    text-decoration: none;
-}
-
-h4,h5,h6 {
-    text-transform: uppercase;
-    font-weight: normal;
-}
-
-h4 {
-    font-size: 1.5rem;
-    margin: 1.5rem 0 0;
-}
-
 blockquote {
-    border-left: 0.2rem solid #BE8B6A;
+    border-left: 0.2rem solid #BCD3E7;
     margin-left: 0;
     padding: 0.1rem 0 0.1rem 0.8rem;
 }
 
-.main-content {
-    max-width: 40rem;
-    margin: 0 auto;
+.sidebar {
+    text-align: right;
+    background-color: #353C42;
+    color: #BCD3E7;
 }
+
+.main-content {
+    background-color: #EAF3FC;
+    color: #353C42;
+}
+
+.sidebar > section {
+    padding: 1rem;
+    margin: 80% 0 0;
+}
+
+.main-content > section {
+    padding: 1rem;
+    max-width: 45rem;
+}
+
+
 
 .footnotes {
     font-size: 0.8rem;
@@ -59,7 +38,7 @@ blockquote {
     text-align: center;
     margin: 2rem auto;
     width: 40%;
-    border-top: 1px solid #BE8B6A;
+    border-top: 1px solid #BCD3E7;
 }
 .footnotes li {
     padding-bottom: 0.5rem;
