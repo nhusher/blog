@@ -6,9 +6,19 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="alternate" type="application/atom+xml" href="/atom.xml"/>
-    <title> {{ page.title }}</title>
+    <title> {{ site.title }} | {{ page.title }}</title>
   </head>
   <body>
-    {{ content }}
+    <header>
+      <h1>{{ site.title }}</h1>
+    </header>
+    <section class="pure-g main-content">
+      <div class="pure-u-1-4">
+        <p>By Nicholas Husher</p>
+      </div>
+      <div class="pure-u-3-4">
+        {{ content }}
+      </div>
+    </section>
   </body>
 </html>
