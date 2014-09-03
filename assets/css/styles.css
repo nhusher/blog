@@ -5,8 +5,10 @@ html, button, input, select, textarea,
   line-height: 1.5;
 }
 
-html { height: 100%; }
-body { min-height: 100vh; }
+body {
+  min-height: 100vh;
+  position: relative;
+}
 .root { min-height: 100vh; }
 
 sup a { text-decoration: none; }
@@ -46,15 +48,12 @@ a:visited {
 }
 
 .sidebar-container {
-  text-align: right;
   background-color: #353C42;
   color: #BCD3E7;
-  position: relative;
 }
 
 .sidebar {
-  padding: 1rem;
-  margin: 15% 0 0;
+  padding: 1rem 1rem 0;
 }
 
 .sidebar h1 {
@@ -62,7 +61,6 @@ a:visited {
   line-height: 1;
   font-size: 3rem;
   text-transform: uppercase;
-  max-width: 16rem;
   margin: 0 0 0 auto;
 }
 
@@ -70,24 +68,7 @@ a:visited {
   margin: 0;
 }
 
-.sidebar .copyright {
-  position: absolute;
-  bottom: 1rem;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  opacity: 0.6;
-}
-
-.sidebar .copyright .c {
-  position: relative;
-  bottom: -0.2rem;
-}
-
 .sidebar nav {
-  margin: 10% -0.2rem 0 0;
   font-family: Lato, sans-serif;
   text-transform: uppercase;
   font-size: 1.1rem;
@@ -106,7 +87,6 @@ a:visited {
   background-color: rgba(255,255,255,0.1);
 }
 
-
 .main-content-container {
   background-color: #EAF3FC;
   color: #353C42;
@@ -117,6 +97,7 @@ a:visited {
   margin: 5% 0 0;
   max-width: 45rem;
 }
+
 
 .footnotes {
   font-size: 0.8rem;
@@ -131,6 +112,69 @@ a:visited {
 }
 .footnotes li {
   padding-bottom: 0.5rem;
+}
+
+footer {
+  color: #67747F;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar nav ul {
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  .sidebar nav ul li {
+    display: inline-block;
+  }
+
+  footer {
+    padding: 1rem;
+    font-family: Lato, sans-serif;
+    background-color: #353C42;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-container {
+    text-align: right;
+    position: relative;
+  }
+  .sidebar {
+    margin: 15% 0 0;
+    padding: 1rem;
+  }
+  .sidebar h1 {
+    float: right;
+    max-width: 16rem;
+    min-width: 12rem;
+  }
+  .sidebar .byline {
+    clear: both;
+  }
+  .sidebar nav {
+    margin: 10% -0.2rem 0 0;
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    max-width: 25%;
+    box-sizing: border-box;
+  }
+
+  .copyright .c {
+    position: relative;
+    bottom: -0.25rem;
+  }
+
 }
 
 /* TODO: move this out into a separate file */
