@@ -1,5 +1,5 @@
 ---
-title: What's next?
+title: What&rsquo;<span class="k1-1">s</span> next?
 layout: post
 ---
 
