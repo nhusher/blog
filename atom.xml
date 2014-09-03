@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>romantic version 0.1.0-POLAROID</title>
+ <link href="http://blog.nickol.us/atom.xml" rel="self"/>
+ <link href="http://blog.nickol.us"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://blog.nickol.us</id>
+ <author>
+   <name>Nicholas Husher</name>
+   <email>nhusher@gmail.com</email>
+ </author>
+ 
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://blog.nickol.us{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://nhusher.github.com{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>
