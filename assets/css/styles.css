@@ -47,6 +47,15 @@ a:visited {
   color: #54727D;
 }
 
+hr {
+  border: 1px solid #BCD3E7;
+  border-width: 1px 0 0 0;
+  display: block;
+  margin: 2rem auto;
+  width: 40%;
+
+}
+
 .sidebar-container {
   background-color: #353C42;
   color: #BCD3E7;
@@ -55,7 +64,6 @@ a:visited {
 .sidebar {
   padding: 1rem 1rem 0;
 }
-
 .sidebar h1 {
   margin: 0;
   line-height: 1;
@@ -63,17 +71,14 @@ a:visited {
   text-transform: uppercase;
   margin: 0 0 0 auto;
 }
-
 .sidebar .byline {
   margin: 0;
 }
-
 .sidebar nav {
   font-family: Lato, sans-serif;
   text-transform: uppercase;
   font-size: 1.1rem;
 }
-
 .sidebar nav a {
   color: #BCD3E7;
   text-decoration: none;
@@ -86,26 +91,21 @@ a:visited {
 .sidebar nav a:hover {
   background-color: rgba(255,255,255,0.1);
 }
-
 .main-content-container {
   background-color: #EAF3FC;
   color: #353C42;
 }
-
 .main-content {
   padding: 1rem;
   margin: 5% 0 0;
   max-width: 45rem;
 }
-
-
 .footnotes {
   font-size: 0.8rem;
 }
 .footnotes::before {
   content: "";
   display: block;
-  text-align: center;
   margin: 2rem auto;
   width: 40%;
   border-top: 1px solid #BCD3E7;
@@ -113,11 +113,9 @@ a:visited {
 .footnotes li {
   padding-bottom: 0.5rem;
 }
-
 footer {
   color: #67747F;
 }
-
 .copyright {
   margin: 0;
   padding: 0;
@@ -129,11 +127,9 @@ footer {
     margin: 0;
     padding: 1rem 0;
   }
-
   .sidebar nav ul li {
     display: inline-block;
   }
-
   footer {
     padding: 1rem;
     font-family: Lato, sans-serif;
@@ -147,7 +143,7 @@ footer {
     position: relative;
   }
   .sidebar {
-    margin: 15% 0 0;
+    margin: 17% 0 0;
     padding: 1rem;
   }
   .sidebar h1 {
@@ -161,7 +157,6 @@ footer {
   .sidebar nav {
     margin: 10% -0.2rem 0 0;
   }
-
   .copyright {
     position: absolute;
     bottom: 0;
@@ -169,7 +164,6 @@ footer {
     max-width: 25%;
     box-sizing: border-box;
   }
-
   .copyright .c {
     position: relative;
     bottom: -0.25rem;
