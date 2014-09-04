@@ -1,5 +1,6 @@
 ---
-title: What&rsquo;<span class="k1-1">s</span> next?
+title: What's next?
+kerned_title: What&rsquo;<span class="k1-1">s</span> next?
 layout: post
 ---
 
