@@ -33,13 +33,13 @@ Unlike many modern JS frameworks, YUI isn't "opinionated"<sup>[1]</sup> about ap
 There's still a lot of code that I'll be working with that sits on top of YUI, but has been marked for refactoring to Angular<sup>[2]</sup> since late last year. Eventually, the dependency will be removed entirely, and I'll have few enough reasons to hit up the documentation. Still, I wouldn't be the developer I am today without the experience I've had with YUI; the great ideas embedded in it will inform my decisions about writing software for a long time.
 
 <ol class="footnotes">
-  <li id="1-1">
+  <li id="f1-1">
     "Opinionated" feels like a spin-word for a much uglier reality&mdash;an opinionated system is tightly-coupled or very complex, and usually both. It's telling that systems that could reasonably be called opinionated, but also have well-justified reasons for their decisions, do not claim that adjective. On the other hand, systems that make design decisions without clearly-stated rationales are eager to use it.
   </li>
-  <li>
+  <li id="f1-2">
     I assume I'll be writing a lot about Angular in the coming months. I'm sure know too little about it, and I'm sure dislike it too much.
   </li>
 </ol>
 
-[1]: #1-1
-[2]: #1-2
+[1]: #f1-1
+[2]: #f1-2
