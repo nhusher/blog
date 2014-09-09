@@ -121,8 +121,8 @@ footer {
 
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 3rem;
+  h2 {
+    font-size: 2rem;
   }
   .sidebar nav ul {
     margin: 0;
@@ -139,7 +139,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  h1 {
+  h2 {
     font-size: 4rem;
   }
   .sidebar-container {
@@ -172,11 +172,16 @@ footer {
     position: relative;
     bottom: -0.25rem;
   }
-
+  .copyright .byline {
+    display: block;
+  }
 }
 
 /* TODO: move this out into a separate file */
 
 .k1-1 {
   margin-left: -0.3rem;
+}
+.k2-1 {
+  font-size: 110%;
 }
