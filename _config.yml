@@ -1,4 +1,6 @@
 title: De Finibus
 permalink: pretty
 paginate: 5
-highlighter: pygments
+markdown: redcarpet
+redcarpet:
+    extensions: [ smart ]
