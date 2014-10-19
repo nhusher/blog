@@ -1,6 +1,7 @@
 title: De Finibus
 permalink: pretty
-paginate: 5
+paginate: 10
 markdown: redcarpet
+paginate_path: "archive/page:num"
 redcarpet:
     extensions: [ smart ]
