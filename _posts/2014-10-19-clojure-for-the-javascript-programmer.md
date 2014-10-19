@@ -59,7 +59,7 @@ The last peculiar thing about Clojure is that it doesn't reserve very many chara
 
 The most striking feature to newcomers to the language is how expressive it is. A Clojure program can easily be half as long as the equivalent in other languages, and often even smaller than that. Once you're comfortable with the standard library, it will be hard to go back to more-verbose languages. Here are two snippets in Javascript that check if an array contains only numbers:
 
-```
+```javascript
 // Naive Javascript:
 function areAllNumbers(collection) {
     for(var i = 0; i < collection.length; i++) {
@@ -76,7 +76,7 @@ collection.some(function(item) { return typeof item === 'number'; });
 
 The following examples are the same algorithms in Clojure; Even if you're unfamiliar with the language, it should be possible to see the "bones" of what's going on:
 
-```
+```clojure
 ;; Naive Clojure:
 (defn all-numbers? [coll]    
   (cond
@@ -105,7 +105,7 @@ This is also a good time to bring up the excellent standard library Clojure has.
 
 The Clojure standard library is large, but can be used across many data types. The biggest beneficiaries of this approach are collections. Every collection in the language can use the functions that operate on sequences (including strings and maps). The values of the collections are intelligibly coerced into a shared representation that can be easily acted upon:
 
-```
+```clojure
 (first [ 1 2 3 ])         ;; => [ 1 ]
 (first { :foo 1 :bar 2 }) ;; => [ :foo 1 ]
 (first "Hello")           ;; => \H
@@ -121,7 +121,7 @@ Why is this important? There are a few reasons: It means that the functions you 
 
 For example, there's a bug in the following code: 
 
-```
+```javascript
 var phoneNumbersPromise = getPhoneNumbers('george');
 
 phoneNumbersPromise.then(function(phoneNumbers) {
