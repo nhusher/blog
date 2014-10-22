@@ -71,7 +71,7 @@ function areAllNumbers(collection) {
 }
 
 // Or, using Javascript's collection methods:
-collection.some(function(item) { return typeof item === 'number'; });
+collection.every(function(item) { return typeof item === 'number'; });
 ```
 
 The following examples are the same algorithms in Clojure; Even if you're unfamiliar with the language, it should be possible to see the "bones" of what's going on:
