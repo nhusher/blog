@@ -139,6 +139,17 @@ footer {
   padding: 0;
 }
 
+.back-issues {
+  list-style: none;
+  padding: 0;
+}
+.back-issues .longform-article::before {
+  content: "λ";
+  font-size: 125%;
+  padding-right: 0.3rem;
+  vertical-align: middle;
+}
+
 
 pre {
   padding: 1rem;
@@ -276,8 +287,6 @@ pre code {
 /* TODO: move this out into a separate file */
 
 .k1-1 {
-  margin-left: -0.3rem;
+  margin-left: -0.1rem;
 }
-.k2-1 {
-  font-size: 110%;
-}
+
