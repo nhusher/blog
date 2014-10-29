@@ -2,8 +2,6 @@
 
 title: Clojure for the Javascript Programmer
 
-kerned_title: Clojure for the<br />Javascript Programmer
-
 layout: post
 
 ---
@@ -14,7 +12,7 @@ I've become a bit infamous among my peers for evangelizing Clojure and the unfam
 
 Clojure can be an intimidating beast from a distance, but up-close it's not nearly as terrifying. A recent comment by a coworker is summarized by, "Clojure seems really powerful, but when I look at that code I'm totally lost." I believe this sentiment is rooted in Clojure's unfamiliar syntax, but the language described by that syntax isn't very much different from Javascript. Brenden Eich based a lot of Javascript on Smalltalk, which was itself inspired by Lisp. Clojure is a Lisp dialect, so the two languages are distant cousins of one another; while the syntaxes of each language might be wildly different, many of the underlying ideas are the same.
 
-### A quick language primer.
+### A quick language primer
 
 There are two rules for translating between Javascript and Clojure. The first rule is that parenthesis begin to the left of the function name:
 
@@ -50,16 +48,13 @@ Clojure has a bunch of built-in literals to describe different types of data, al
 
 The last peculiar thing about Clojure is that it doesn't reserve very many characters for syntax purposes. The following are all valid names in Clojure: `number?`, `transact!`, `assoc-in`, `clj->json`, `*app-state*`,  `>!`.
 
-
 ### Why learn Clojure?
 
-"Clojure feels like a general-purpose language beamed back from the near future." This is how the book *Programming Clojure* describes the language. Clojure has a constellation of features that will help you build better programs, but remains pragmatic about how those programs need to be written. If you need to fall back to an imperative or object-oriented style, Clojure will not stop you.
-
-#### 1. Write less code.
+"Clojure feels like a general-purpose language beamed back from the near future." This is how the book *Programming Clojure* describes the language. Clojure has a constellation of features that will help you build better programs:
 
 The most striking feature to newcomers to the language is how expressive it is. A Clojure program can easily be half as long as the equivalent in other languages, and often even smaller than that. Once you're comfortable with the standard library, it will be hard to go back to more-verbose languages. Here are two snippets in Javascript that check if an array contains only numbers:
 
-```javascript
+```
 // Naive Javascript:
 function areAllNumbers(collection) {
     for(var i = 0; i < collection.length; i++) {
@@ -76,7 +71,7 @@ collection.every(function(item) { return typeof item === 'number'; });
 
 The following examples are the same algorithms in Clojure; Even if you're unfamiliar with the language, it should be possible to see the "bones" of what's going on:
 
-```clojure
+```
 ;; Naive Clojure:
 (defn all-numbers? [coll]    
   (cond
@@ -92,8 +87,6 @@ Javascript stands out as a very expressive language, and yet the Clojure samples
 
 There is an important distinction between *conciseness* and *terseness*. Minification or creative "code golf" can make the source code smaller, but at the cost of understandability. This is what I mean by terse. Conciseness is about being able to express an idea intelligibly in a small space, such that it can be composed easily into higher-level concepts.
 
-#### 2. Think Functionally.
-
 The next obvious feature is that it's a functional language, which can be a tough thing to get used to. Much of Javascript is calling functions attached to objects to produce a new state. In Clojure, you call functions against values to produce a new value. If you want to append to an array in Javascript, you use the `concat` method with the value you want to add, in Clojure you call the `conj` (short for "conjoin") with the collection and the value you want to add.<sup>[2]</sup>
 
 ```
@@ -105,15 +98,12 @@ This is also a good time to bring up the excellent standard library Clojure has.
 
 The Clojure standard library is large, but can be used across many data types. The biggest beneficiaries of this approach are collections. Every collection in the language can use the functions that operate on sequences (including strings and maps). The values of the collections are intelligibly coerced into a shared representation that can be easily acted upon:
 
-```clojure
+```
 (first [ 1 2 3 ])         ;; => [ 1 ]
 (first { :foo 1 :bar 2 }) ;; => [ :foo 1 ]
 (first "Hello")           ;; => \H
 (first #{ :red :green })  ;; => :red
 ```
-
-
-#### 3. Embrace Immutability.
 
 I believe most-important feature of Clojure to understand is immutability. In Javascript, strings are immutable&mdash;there's nothing you can do to a string that won't create a new string as a result. If you call `.toUpperCase()` on a string, it will return a *new copy* of that string with all the letters in upper-case, rather than modifying the string in place. In Clojure, all data behaves in this way; If you want to add an item to a vector, you call `conj`, which will return a *new* vector with the item added.
 
@@ -121,7 +111,7 @@ Why is this important? There are a few reasons: It means that the functions you 
 
 For example, there's a bug in the following code: 
 
-```javascript
+```
 var phoneNumbersPromise = getPhoneNumbers('george');
 
 phoneNumbersPromise.then(function(phoneNumbers) {
@@ -146,7 +136,7 @@ The behavior of one promise block depends on the behavior of the other. It doesn
 
 If the value returned by the phone number promise were immutable, this bug could not exist.
 
-#### 4. All this other great stuff!
+In addition to the above major features, you get a bunch of pretty awesome minor ones:
 
 * Live coding
 * Managed CSP
@@ -158,9 +148,6 @@ If the value returned by the phone number promise were immutable, this bug could
 * Value destructuring
 * Ad-hoc Polymorphism
 * Lazy and Infinite Sequences
-
-
-### Clojure will make you a better programmer.
 
 I believe there is value in learning new languages with unfamiliar ideas. Every programming language that's made it to production has been a successful attempt at solving a problem in software. The ideas encoded in these languages are often portable to other languages, or can be an introduction into new ways of thinking about a particular set of problems. I believe that the concepts embedded in Clojure are incredibly useful, and they will make you a better programmer in whatever language you choose to write in.
 

@@ -3,6 +3,6 @@ layout: default
 ---
 
 <div class="post">
-  <h2>{{page.kerned_title}}</h2>
+  <h2>{% if page.kerned_title %}{{page.kerned_title}}{% else %}{{page.title}}{% endif %}</h2>
   {{ content }}
 </div>

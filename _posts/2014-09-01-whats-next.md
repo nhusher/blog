@@ -18,7 +18,7 @@ I suspect that I'll be writing about three different topics in the coming months
 
 Before I start looking forward, I want to begin by looking back.
 
-#### A retrospective on YUI
+### A retrospective on YUI
 
 I've been building applications in YUI for my entire professional career. YUI2 was the first library I picked for ajax, animations, and widgets. I tracked the early development of YUI3 with great interest. Learning YUI3 threw me into entrprise-quality javascript with composable primitives, great documentation, comprehensive testing, and readable source code.
 
