@@ -114,8 +114,10 @@ article {
   margin: 0 0 6rem 0;
 }
 
-.link h5 {
+.link h4 {
+  text-transform: none;
   margin-bottom: 0;
+  font-family: Merriweather, Georgia, serif;
 }
 
 .footnotes {

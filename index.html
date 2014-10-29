@@ -16,9 +16,21 @@ title: the front
     {% if post.category == "linked-list" %}
     <article class="link">
         {% if post.external_url %}
-        <h4><a href="{{post.external_url}}">{{ post.title | markdownify }}</a></h4>
+        <h4><a href="{{post.external_url}}">
+            {% if post.kerned_title %}
+                {{ post.kerned_title }}
+            {% else %}
+                {{post.title}}
+            {% endif %}
+        </a></h4>
         {% else %}
-        <h4>{{ post.title | markdownify }}</h4>
+        <h4>
+            {% if post.kerned_title %}
+                {{ post.kerned_title }}
+            {% else %}
+                {{post.title}}
+            {% endif %}
+        </h4>
         {% endif %}
         {{ post.content }}
     </article>
