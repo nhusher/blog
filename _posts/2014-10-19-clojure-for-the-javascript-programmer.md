@@ -4,8 +4,6 @@ title: Clojure for the Javascript Programmer
 
 layout: post
 
-category: longform-article
-
 ---
 
 *What follows is the first entry in what I imagine will be a short series about Clojure, all from the perspective of a someone who writes a lot of Javascript at his day job. This is intended to be a simplified introduction to Clojure. It will become a short presentation to interested engineers [where I work](http://dealer.com). I've deliberately simplified and omitted some detail that would be covered by a more-comprehensive resource.*

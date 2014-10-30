@@ -6,8 +6,6 @@ kerned_title: What&rsquo;<span class="k1-1">s</span> next?
 
 layout: post
 
-category: longform-article
-
 ---
 
 A few days ago, the development team behind YUI [announced that development on the project would be halted](http://yahooeng.tumblr.com/post/96098168666/important-announcement-regarding-yui). I didn't think I had anything to say about it&mdash;I assumed that I would feel some sadness for a few weeks or months until I moved onto whatever is next. But it's been a week, and I think I'm itching for something to say.
