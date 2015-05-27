@@ -2,7 +2,7 @@
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
   font-family: Merriweather, Georgia, serif;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 body {
