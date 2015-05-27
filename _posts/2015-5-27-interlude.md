@@ -22,4 +22,4 @@ In a couple days, I hope to finish a technical blog post about using [Figwheel][
 
 [dealer]: http://dealer.com
 [faraday]: http://faraday.io
-[fighweel]: https://github.com/bhauman/lein-figwheel
+[figwheel]: https://github.com/bhauman/lein-figwheel
