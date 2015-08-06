@@ -14,14 +14,14 @@ body {
 sup a { text-decoration: none; }
 
 blockquote {
-  border-left: 0.2rem solid #BCD3E7;
+  border-left: 0.2rem solid #b0a5a1;
   margin-left: 0;
   padding: 0.1rem 0 0.1rem 0.8rem;
 }
 
 h1,h2,h3,h4 {
   font-family: Lato, sans-serif;
-  font-weight: 900;
+  font-weight: 300;
 }
 
 h1 a, h2 a, h3 a {
@@ -30,7 +30,6 @@ h1 a, h2 a, h3 a {
 }
 
 h2 {
-  letter-spacing: -0.05rem;
   margin: 0 0 1rem 0;
   line-height: 1;
   font-size: 2rem;
@@ -45,14 +44,14 @@ h3 {
 }
 
 a {
-  color: #2C5F70;
+  color: #D2482D;
 }
 a:visited {
-  color: #54727D;
+  color: #B95946;
 }
 
 hr {
-  border: 1px solid #BCD3E7;
+  border: 1px solid #767677;
   border-width: 1px 0 0 0;
   display: block;
   margin: 2rem auto;
@@ -60,8 +59,8 @@ hr {
 }
 
 .sidebar-container {
-  background-color: #353C42;
-  color: #BCD3E7;
+  background-color: #F6F4F4;
+  color: #675232;
 }
 
 .sidebar {
@@ -73,6 +72,8 @@ hr {
   font-size: 3rem;
   text-transform: uppercase;
   margin: 0 0 0 auto;
+  letter-spacing: -0.15rem;
+  word-spacing: 0.5rem;
 }
 .sidebar .byline {
   margin: 0;
@@ -83,20 +84,20 @@ hr {
   font-size: 1.1rem;
 }
 .sidebar nav a {
-  color: #BCD3E7;
+  color: #9D6C62;
   text-decoration: none;
   letter-spacing: 0.1rem;
   padding: 0.2rem;
 }
 .sidebar nav a:visited {
-  color: #BCD3E7;
+  color: #8C8173;
 }
 .sidebar nav a:hover {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(0,0,0,0.1);
 }
 .main-content-container {
-  background-color: #EAF3FC;
-  color: #353C42;
+  background-color: #F6F4F4;
+  color: #675232;
 }
 .main-content {
   margin: 5.7% 0 0;
@@ -105,6 +106,7 @@ hr {
 }
 .dateline {
   padding: 7rem 0 0;
+  color: #D2482D;
 }
 .dateline.nearest-date {
   padding-top: 0;
@@ -123,17 +125,18 @@ article {
   font-size: 0.8rem;
 }
 .footnotes::before {
-  content: "";
+  content: "* * *";
   display: block;
   margin: 2rem auto;
   width: 40%;
-  border-top: 1px solid #BCD3E7;
+  text-align: center;
+/*  border-top: 1px solid #767677;*/
 }
 .footnotes li {
   padding-bottom: 0.5rem;
 }
 footer {
-  color: #67747F;
+  color: #F6F4F4;
 }
 .copyright {
   margin: 0;
