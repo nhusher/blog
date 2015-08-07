@@ -1,6 +1,6 @@
 ---
 
-title: Clojure for the Javascript Programmer
+title: Clojure for the Javascript programmer
 
 layout: post
 
