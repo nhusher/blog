@@ -10,7 +10,7 @@ external_url: http://slatestarcodex.com/2015/08/15/my-id-on-defensiveness/
 
 ---
 
-Scott Alexander on a process I've been thinking about a lot lately: Accuse a fringe group of some negative thing that at least some of them manifest, and do it enough, they'll slowly turn into that negative caricature:
+Scott Alexander on a process I've been thinking about a lot lately: Accuse a fringe group of some negative feature that at least some members manifest, and do it enough, they'll slowly turn into that negative caricature as the more reasonable ones flee toward the mainstream:
 
 > There’s a term in psychoanalysis, “projective identification”. It means accusing someone of being something, in a way that actually turns them into that thing. For example, if you keep accusing your (perfectly innocent) partner of always being angry and suspicious of you, eventually your partner’s going to get tired of this and become angry, and maybe suspicious that something is up.
 > 
