@@ -18,3 +18,4 @@ Scott Alexander on a process I've been thinking about a lot lately: Accuse a fri
 > [...]
 > People like to talk a lot about “dehumanizing” other people, and there’s some debate over exactly what that entails. Me, I’ve always thought of it the same was as Aristotle: man is the rational animal. To dehumanize them is to say their ideas don’t count, they can’t be reasoned with, they no longer have a place at the table of rational discussion. And in a whole lot of Internet arguments, doing that to a whole group of people seems to be the _explicit goal._
 
+[edit: apparently I'm reading Scott Alexander a lot. I promise that I'm working on longform pieces that have only coincidental similarities to his topics of interest]
