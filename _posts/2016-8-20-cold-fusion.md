@@ -1,14 +1,12 @@
 ---
 
-title: 
-
-kerned_title: Non-dual Awareness
+title: Cold Fusion
 
 layout: post
 
 category: linked-list
 
-external_url: http://slatestarcodex.com/2015/07/28/non-dual-awareness/
+external_url: https://aeon.co/essays/why-do-scientists-dismiss-the-possibility-of-cold-fusion
 
 ---
 
