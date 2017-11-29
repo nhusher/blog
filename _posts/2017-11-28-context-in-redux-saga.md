@@ -6,7 +6,7 @@ layout: post
 
 ---
 
-I use redux-saga [at work] because it offers a robust and testable set of tools for managing complex and asynchronous effects within Redux apps. I recently bumped from an embarrassingly old version to the latest in part to take advantage of a new (but largely undocumented) feature: context.
+At [work], we use [redux-saga] in our client-side webapp because it offers a robust and testable set of tools for managing complex and asynchronous effects within Redux apps. I recently upgraded our version of redux-saga from an embarrassingly old version to the latest, in part to take advantage of a new (but largely undocumented) feature: context.
 
 ### The problem
 
@@ -16,7 +16,7 @@ There are also a few modules in the codebase that *only* work in a browser and w
 
 ### The solution
 
-One of redux-saga's greatest features is that I can test a saga's behavior without actually executing that behavior, or even really knowing much about the details of how that behavior alters the world. It seems like it should be possible to apply that to dependencies as well. With redux-saga 0.15.0 and later, it is, using context.
+One of redux-saga's greatest features is that I can test a saga's behavior without actually executing that behavior, or even really knowing much about the details of how that behavior alters the world. It it should be possible to apply that to dependencies as well. And it is possible in redux-saga 0.15.0 and later using context.
 
 Right now, there are very limited docs for context, but acts as shared value across all sagas that can be read with the `getContext` effect and written to by the `setContext` effect. It can also be set when the saga middleware is created by passing a context object as configuration.
 
@@ -68,11 +68,13 @@ Or, we could use context. Our saga changes only a little bit:
 
 ```js
 import { call, getContext } from 'redux-saga/effects'
+// No more API import:
 // import api from './api' 
-// no more API import
 
 export function * fetchInventorySaga () {
+  // Get the api value out of the shared context:
   const api = yield getContext('api')
+
   const inventory = yield call(api.getInventory)
   // Do something with the inventory data...
 }
@@ -93,7 +95,8 @@ const saga = createSagaMiddleware({
 })
 ```
 
-Being able to late-bind singleton values like this has been enormously helpful writing robust tests in a complex codebase. I'll be steadily migrating my code toward greater-and-greater use of `getContext`, now that I have it.
+Being able to late-bind singleton values like this has been enormously helpful writing robust tests in a complex codebase. I'll be steadily migrating the application code to use `getContext` more frequently, now that I have it as an option.
 
-[at work]: https://www.faraday.io
+[work]: https://www.faraday.io
+[redux-saga]: https://redux-saga.js.org
 [a couple cryptic sentences]: https://github.com/redux-saga/redux-saga/releases/tag/v0.15.0
