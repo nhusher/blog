@@ -4,7 +4,11 @@ title: Using context in redux-saga
 
 layout: post
 
+canonical: http://blog.faraday.io/context-in-redux-saga/
+
 ---
+
+*This post originally appeared on the [Faraday Blog]*
 
 At [work], we use [redux-saga] in our client-side webapp because it offers a robust and testable set of tools for managing complex and asynchronous effects within Redux apps. I recently upgraded our version of redux-saga from an embarrassingly old version to the latest, in part to take advantage of a new (but largely undocumented) feature: context.
 
@@ -97,6 +101,7 @@ const saga = createSagaMiddleware({
 
 Being able to late-bind singleton values like this has been enormously helpful writing robust tests in a complex codebase. I'll be steadily migrating the application code to use `getContext` more frequently, now that I have it as an option.
 
+[Faraday Blog]: http://blog.faraday.io/context-in-redux-saga/
 [work]: https://www.faraday.io
 [redux-saga]: https://redux-saga.js.org
 [a couple cryptic sentences]: https://github.com/redux-saga/redux-saga/releases/tag/v0.15.0
