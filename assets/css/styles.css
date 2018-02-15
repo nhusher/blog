@@ -85,6 +85,11 @@ hr {
   text-transform: uppercase;
   font-size: 1.1rem;
 }
+.sidebar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .sidebar nav a {
   color: #9D6C62;
   text-decoration: none;
