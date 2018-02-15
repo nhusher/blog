@@ -14,11 +14,11 @@ layout: default
     </a></h4>
     {% else %}
     <h4>
-        {% if page.kerned_title %}
-            {{ page.kerned_title }}
-        {% else %}
-            {{page.title}}
-        {% endif %}
+      {% if page.kerned_title %}
+          {{ page.kerned_title }}
+      {% else %}
+          {{page.title}}
+      {% endif %}
     </h4>
     {% endif %}
     {{ content }}

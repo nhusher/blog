@@ -154,7 +154,7 @@ footer {
 
 .back-issues {
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 1rem;
 }
 .back-issues .longform-article::before {
   content: "λ";

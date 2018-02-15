@@ -17,6 +17,15 @@ title: back issues
     <li class="{{ post.category }}"><a href="{{ post.url }}">
         {% if post.kerned_title %}
             {{ post.kerned_title }}
+        {% elsif post.title == '' %}
+            {{ post.date | date: "%A" }} the
+            {% assign day = post.date | date: "%-d"  %}
+            {% case day %}
+                {% when '1' or '21' or '31' %}{{ day }}st
+                {% when '2' or '22' %}{{ day }}nd
+                {% when '3' or '23' %}{{ day }}rd
+                {% else %}{{ day }}th
+            {% endcase %}
         {% else %}
             {{post.title}}
         {% endif %}
