@@ -19,9 +19,9 @@ To do that, I first needed to add the `lein-exec` plugin to my `~/.lein/profiles
 This gives me access to `deps`, a function that lets me pull dependencies down from Maven Central. There's a package by IBM called `icu4j` which has features for printing cardinal and ordinal numbers:
 
 ```clj
-(use '[leiningen.exec :only (deps)]) ;; get function to pull maven deps at runtime
-(deps '[[com.ibm.icu/icu4j "65.1"]]) ;; pull the icu4j package for formatting nums
-(import 'java.util.Locale 'com.ibm.icu.text.RuleBasedNumberFormat) ;; import java classes
+(use '[leiningen.exec :only (deps)])
+(deps '[[com.ibm.icu/icu4j "65.1"]])
+(import 'java.util.Locale 'com.ibm.icu.text.RuleBasedNumberFormat)
 ​
 ;; set up fns for formatting numbers
 (def rbnf (RuleBasedNumberFormat. Locale/ENGLISH RuleBasedNumberFormat/SPELLOUT))
@@ -39,7 +39,9 @@ Next, I need to render a list of gifts using cardinal numbers—four calling bir
   ([gift-1 gift-2]           ;; fn for two gifts (2nd day and later)
     (str "  " (cardinal 2) " " gift-1 "\n  and a " gift-2))
   ([gift-1 gift-2 & gifts]   ;; fn for many gifts (3rd day and later)
-    (str "  " (cardinal (+ 2 (count gifts))) " " gift-1 "\n" (apply gift-lines gift-2 gifts))))
+    (str "  "
+      (cardinal (+ 2 (count gifts))) " " gift-1 "\n"
+      (apply gift-lines gift-2 gifts))))
 ```
 
 Now, a function that renders a whole verse, which is just adding a prefix of "On the [ordinal] day of Christmas..." to the previous function, then rendering the list of gifts in reverse.
@@ -49,7 +51,7 @@ Now, a function that renders a whole verse, which is just adding a prefix of "On
   (str
     "On the " (ordinal (count gifts)) " day of Christmas, my true love gave to me\n"
     (apply gift-lines (reverse gifts))))
-````
+```
 
 And lastly, a function that prints out the whole song, which is a loop that consumes progressively more and more of the list of gifts until it runs out. I could call this function with any number or any list of gifts, and it should absorb the difference gracefully.
 
