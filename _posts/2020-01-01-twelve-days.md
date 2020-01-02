@@ -31,7 +31,7 @@ This gives me access to `deps`, a function that lets me pull dependencies down f
 
 I now have `cardinal` and `ordinal` functions, which can be called with a number to get the cardinal/ordinal string of that number.
 
-Next, I need to render a list of gifts using cardinal numbers-four calling birds, three French hens, etc-and decided to use Clojure's dispatch-on-arity and recursion to print out all the gifts passed to it. A multimethod may be more appropriate here, using the length of the passed vector rather than using arity like this. Nevertheless:
+Next, I need to render a list of gifts using cardinal numbers—four calling birds, three French hens, etc—and decided to use Clojure's dispatch-on-arity and recursion to print out all the gifts passed to it. A multimethod may be more appropriate here, using the length of the passed vector rather than using arity like this. Nevertheless:
 
 ```clj
 (defn gift-lines
