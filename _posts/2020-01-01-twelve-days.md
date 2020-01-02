@@ -78,7 +78,11 @@ Calling the `song` function:
   "lords a-leaping"
   "pipers piping"
   "drummers drumming"])
+```
 
+Outputs:
+
+```
 On the first day of Christmas, my true love gave to me
   a partridge in a pear tree
 On the second day of Christmas, my true love gave to me
