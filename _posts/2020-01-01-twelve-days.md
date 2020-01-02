@@ -27,6 +27,7 @@ This gives me access to `deps`, a function that lets me pull dependencies down f
 (def rbnf (RuleBasedNumberFormat. Locale/ENGLISH RuleBasedNumberFormat/SPELLOUT))
 (defn cardinal [n] (.format rbnf n "%spellout-cardinal"))
 (defn ordinal [n] (.format rbnf (long n) "%spellout-ordinal"))
+
 ```​
 
 I now have `cardinal` and `ordinal` functions, which can be called with a number to get the cardinal/ordinal string of that number.
