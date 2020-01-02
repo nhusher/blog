@@ -22,16 +22,16 @@ This gives me access to `deps`, a function that lets me pull dependencies down f
 (use '[leiningen.exec :only (deps)])
 (deps '[[com.ibm.icu/icu4j "65.1"]])
 (import 'java.util.Locale 'com.ibm.icu.text.RuleBasedNumberFormat)
-​
+
 ;; set up fns for formatting numbers
 (def rbnf (RuleBasedNumberFormat. Locale/ENGLISH RuleBasedNumberFormat/SPELLOUT))
 (defn cardinal [n] (.format rbnf n "%spellout-cardinal"))
 (defn ordinal [n] (.format rbnf (long n) "%spellout-ordinal"))
-```​
+```
 
 I now have `cardinal` and `ordinal` functions, which can be called with a number to get the cardinal/ordinal string of that number.
 
-Next, I need to render a list of gifts using cardinal numbers—four calling birds, three French hens, etc—and decided to use Clojure's dispatch-on-arity and recursion to print out all the gifts passed to it. A multimethod may be more appropriate here, using the length of the passed vector rather than using arity like this. Nevertheless:
+Next, I need to render a list of gifts using cardinal numbers-four calling birds, three French hens, etc-and decided to use Clojure's dispatch-on-arity and recursion to print out all the gifts passed to it. A multimethod may be more appropriate here, using the length of the passed vector rather than using arity like this. Nevertheless:
 
 ```clj
 (defn gift-lines
@@ -45,7 +45,7 @@ Next, I need to render a list of gifts using cardinal numbers—four calling bir
 ```
 
 Now, a function that renders a whole verse, which is just adding a prefix of "On the [ordinal] day of Christmas..." to the previous function, then rendering the list of gifts in reverse.
-​
+
 ```clj
 (defn verse [gifts] ;; generate a verse (day) of the song
   (str
@@ -60,7 +60,7 @@ And lastly, a function that prints out the whole song, which is a loop that cons
   (doseq [day (range 1 (inc (count gifts)))]
     (println (verse (take day gifts)))
     (println "")))
-```​
+```
 
 Calling the `song` function:
 
