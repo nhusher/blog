@@ -30,7 +30,7 @@ To solve this problem in Clojure, we need to reach into the Java APIs for manipu
 (defn codepoint-to-str [cpt]
   (-> (StringBuilder.)
       (.appendCodePoint cpt)
-      .toString))
+      str))
 
 ;; For a given string, split it into codepoints and generate a string
 ;; for each individual code point.
