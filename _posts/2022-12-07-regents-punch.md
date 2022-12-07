@@ -39,7 +39,7 @@ For the last few years I've been tasked with bringing a big batched cocktail to 
   </ol>
 </div>
 
-The recipe is very flexible and scales down well. The image above is a half recipe split between two ~30oz bottles. In addition, I make the following modifications:
+The recipe is very flexible and scales down well, and I usually make a half recipe. In addition, I make the following modifications:
 
 * I use fresh juice when I can. Six lemons and four oranges will cover the lemon and orange juice requirements. In addition, the lemon and orange peels go into the oleo saccharum. In a future year I will try making my own pineapple juice.
 * For additional holiday flavors, I steep some caffeine-free rooibos chai in addition to or instead of the green tea.
