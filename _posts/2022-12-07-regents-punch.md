@@ -10,9 +10,9 @@ layout: post
 
 For the last few years I've been tasked with bringing a big batched cocktail to holiday family gatherings. I've brought a few different things over the years, but the last two years I've settled on this modified [Regent's Punch][regents-punch] as an ideal pre-dinner holiday dram.
 
-<div itemscope itemtype="http://schema.org/Recipe">
+<div itemscope itemtype="http://schema.org/Recipe" class="callout">
   <h4>
-    <span itemprop="name">Regen's Punch</span> by
+    <span itemprop="name">Regent's Punch</span> by
     <span itemprop="author">Will Duncan</span>
   </h4>
   <p>Yield: <span itemprop="recipeYield">16 cups</span></p>
