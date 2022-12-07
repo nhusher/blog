@@ -38,7 +38,7 @@ For the last few years I've been tasked with bringing a big batched cocktail to 
     <li>Once steeped, use the hot green tea to melt the oleo saccharum.</li>
     <li>Add to the punch bowl all of the remaining ingredients, except the Champagne and store in the refrigerator until service.</li>
     <li>When ready to serve, add in ice and top with Champagne.</li>
-  </ul>
+  </ol>
 </div>
 
 The recipe is very flexible and scales down well. The image above is a half recipe split between two ~30oz bottles. In addition, I make the following modifications:
