@@ -6,7 +6,7 @@ layout: post
 
 ---
 
-![regent's punch in bottles](/assets/img/regents-punch.png)
+![regent's punch in bottles](/assets/img/regents-punch.webp)
 
 For the last few years I've been tasked with bringing a big batched cocktail to holiday family gatherings. I've brought a few different things over the years, but the last two years I've settled on this modified [Regent's Punch][regents-punch] as an ideal pre-dinner holiday dram.
 
