@@ -13,6 +13,12 @@ body {
 
 sup a { text-decoration: none; }
 
+.callout {
+  border-left: 0.2rem solid #b0a5a1;
+  margin-left: 0;
+  padding: 0 0 0.1rem 0.8rem;  
+}
+
 blockquote {
   border-left: 0.2rem solid #b0a5a1;
   margin-left: 0;
